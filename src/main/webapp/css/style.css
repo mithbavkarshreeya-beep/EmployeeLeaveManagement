@@ -1,0 +1,1171 @@
+/* =========================================
+   ELMS - Employee Leave Management System
+   Modern Blue Login Design
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #123b8f;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+   ========================================= */
+
+.login-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 55px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff 0%,
+            #e5efff 45%,
+            #f8fbff 100%
+        );
+}
+
+
+/* =========================================
+   BACKGROUND CIRCLES
+   ========================================= */
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.circle-one {
+    width: 520px;
+    height: 520px;
+    top: -300px;
+    right: 12%;
+    background: rgba(135, 177, 255, 0.16);
+}
+
+.circle-two {
+    width: 600px;
+    height: 600px;
+    bottom: -430px;
+    left: 30%;
+    background: rgba(101, 153, 245, 0.13);
+}
+
+.circle-three {
+    width: 350px;
+    height: 350px;
+    bottom: -180px;
+    right: -100px;
+    background: rgba(111, 160, 255, 0.12);
+}
+
+
+/* =========================================
+   LEFT INTRODUCTION
+   ========================================= */
+
+.login-intro {
+    width: 52%;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ELMS BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #123b8f;
+}
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #3f82f7,
+        #174fd1
+    );
+
+    color: white;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(42, 91, 202, 0.25);
+}
+
+
+/* INTRO CONTENT */
+
+.intro-content {
+    margin-top: 105px;
+    max-width: 620px;
+}
+
+.eyebrow {
+    color: #4f83d7;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 13px;
+}
+
+.intro-content h1 {
+    color: #103b91;
+
+    font-size: clamp(42px, 4.2vw, 64px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    max-width: 520px;
+
+    color: #6682ae;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+}
+
+
+/* SIMPLE / SECURE / EFFICIENT */
+
+.features {
+    display: flex;
+    gap: 12px;
+
+    color: #5277ad;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   LOGIN CARD
+   ========================================= */
+
+.login-box {
+    width: 430px;
+
+    position: relative;
+    z-index: 3;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(210, 224, 246, 0.8);
+
+    box-shadow:
+        0 25px 70px rgba(41, 78, 140, 0.13);
+}
+
+
+/* CARD BRAND */
+
+.card-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #123b8f;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 38px;
+}
+
+.brand-mark.small {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+}
+
+
+/* LOGIN TITLE */
+
+.login-box h2 {
+    color: #123b8f;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.login-box .subtitle {
+    color: #7890b4;
+
+    font-size: 16px;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+    margin-bottom: 21px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #193d82;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #d5e0f1;
+
+    border-radius: 11px;
+
+    background: #fbfdff;
+
+    color: #17386f;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #a2b4ce;
+}
+
+.form-group input:focus {
+    border-color: #4b7fe4;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(75, 127, 228, 0.10);
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+   ========================================= */
+
+.login-box .btn {
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: linear-gradient(
+        135deg,
+        #3d7df0,
+        #1d56d5
+    );
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 9px 22px rgba(44, 94, 211, 0.25);
+
+    transition: 0.2s ease;
+}
+
+.login-box .btn span {
+    margin-left: 8px;
+
+    font-size: 19px;
+}
+
+.login-box .btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 12px 26px rgba(44, 94, 211, 0.32);
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .login-page {
+        justify-content: center;
+
+        padding: 40px 25px;
+    }
+
+    .login-intro {
+        display: none;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 430px;
+    }
+}
+/* =========================================
+   EMPLOYEE DASHBOARD
+   ========================================= */
+
+.dashboard-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f2f7ff 0%,
+            #eaf2ff 50%,
+            #ffffff 100%
+        );
+
+    color: #123b8f;
+}
+
+
+/* Background circles */
+
+.dashboard-circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.dashboard-circle.circle-one {
+    width: 520px;
+    height: 520px;
+
+    top: -350px;
+    right: 5%;
+
+    background: rgba(119, 165, 246, 0.13);
+}
+
+.dashboard-circle.circle-two {
+    width: 500px;
+    height: 500px;
+
+    bottom: -350px;
+    right: -100px;
+
+    background: rgba(119, 165, 246, 0.10);
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.dashboard-header {
+    height: 76px;
+
+    padding: 0 45px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-bottom: 1px solid #e1e9f7;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 5;
+}
+
+.dashboard-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #123b8f;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #183a79;
+
+    font-size: 13px;
+}
+
+.user-info strong {
+    display: block;
+    font-size: 14px;
+}
+
+.user-info small {
+    display: block;
+    color: #8195b5;
+    margin-top: 1px;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e6efff;
+    color: #2459ca;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DASHBOARD LAYOUT
+   ========================================= */
+
+.dashboard-layout {
+    min-height: calc(100vh - 76px);
+
+    display: flex;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.sidebar {
+    width: 210px;
+
+    padding: 35px 18px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border-right: 1px solid #e3eaf7;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    margin-bottom: 8px;
+
+    border-radius: 10px;
+
+    color: #61799f;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+.sidebar-link span {
+    width: 20px;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+.sidebar-link:hover {
+    background: #eef4ff;
+    color: #285bd0;
+}
+
+.sidebar-link.active {
+    background: #eaf1ff;
+    color: #2458d0;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.dashboard-content {
+    flex: 1;
+
+    max-width: 1050px;
+
+    padding: 48px 55px;
+}
+
+.dashboard-welcome {
+    margin-bottom: 32px;
+}
+
+.dashboard-welcome h1 {
+    color: #123b8f;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.dashboard-welcome p {
+    color: #7890b4;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   LEAVE BALANCE CARD
+   ========================================= */
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid #e0e8f5;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(48, 84, 143, 0.07);
+
+    padding: 25px 28px;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-card h2,
+.dashboard-actions h2 {
+    color: #173b82;
+
+    font-size: 18px;
+
+    font-weight: 650;
+
+    margin-bottom: 20px;
+}
+
+.leave-balance-new {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.leave-balance-new-item {
+    padding: 10px 25px;
+
+    border-right: 1px solid #e5ebf5;
+}
+
+.leave-balance-new-item:first-child {
+    padding-left: 5px;
+}
+
+.leave-balance-new-item:last-child {
+    border-right: none;
+}
+
+.leave-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    background: #edf3ff;
+
+    color: #2e66d7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.leave-balance-new-item h3 {
+    color: #355486;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+.remaining-number {
+    color: #123f9a;
+
+    font-size: 30px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+.leave-balance-new-item p {
+    color: #9aabc4;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   ACTIONS
+   ========================================= */
+
+.dashboard-actions {
+    margin-top: 5px;
+}
+
+.action-buttons {
+    display: flex;
+
+    gap: 16px;
+
+    max-width: 700px;
+}
+
+.dashboard-action {
+    flex: 1;
+
+    min-height: 58px;
+
+    padding: 0 22px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.dashboard-action.primary {
+    background: linear-gradient(
+        135deg,
+        #3e7df0,
+        #1e56d5
+    );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(46, 93, 210, 0.20);
+}
+
+.dashboard-action.secondary {
+    background: white;
+
+    color: #2455be;
+
+    border: 1px solid #dce6f6;
+}
+
+.dashboard-action:hover {
+    transform: translateY(-1px);
+}
+
+.dashboard-action.secondary:hover {
+    background: #f8fbff;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .dashboard-header {
+        padding: 0 20px;
+    }
+
+    .sidebar {
+        width: 175px;
+    }
+
+    .dashboard-content {
+        padding: 35px 25px;
+    }
+
+    .leave-balance-new {
+        grid-template-columns: 1fr;
+    }
+
+    .leave-balance-new-item {
+        border-right: none;
+        border-bottom: 1px solid #e5ebf5;
+
+        padding: 18px 5px;
+    }
+
+    .leave-balance-new-item:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .dashboard-layout {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid #e3eaf7;
+    }
+
+    .sidebar-link {
+        margin: 0;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+/* =========================================
+   APPLY LEAVE PAGE
+   ========================================= */
+
+.leave-form-card {
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.form-heading {
+    margin-bottom: 28px;
+}
+
+.form-heading h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+    color: #17233c;
+}
+
+.form-heading p {
+    margin: 0;
+    color: #71809b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #263653;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #dbe3f0;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #263653;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #7da4ed;
+    box-shadow: 0 0 0 3px #edf3ff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 105px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.handover-section {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #e7edf6;
+}
+
+.handover-section .form-heading {
+    margin-bottom: 25px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 1px solid #dbe3f0;
+    background: #ffffff;
+    color: #53627c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cancel-btn:hover {
+    background: #f5f8fd;
+}
+
+.primary-action {
+    border: none;
+    cursor: pointer;
+    padding: 13px 22px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .cancel-btn,
+    .primary-action {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+}
+/* Leave Type dropdown */
+
+.leave-form-card select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #dbe3f0;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #263653;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.leave-form-card select:focus {
+    border-color: #7da4ed;
+    box-shadow: 0 0 0 3px #edf3ff;
+}
+html,
+body {
+    min-height: 100%;
+    height: auto;
+}
+
+body.dashboard-page {
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.dashboard-content {
+    min-height: calc(100vh - 73px);
+    height: auto;
+    overflow: visible;
+}
+.form-actions .primary-action {
+    width: auto !important;
+    min-width: 170px !important;
+    max-width: 220px !important;
+    padding: 11px 18px !important;
+    font-size: 14px !important;
+    border-radius: 9px !important;
+    flex: 0 0 auto !important;
+}
+/* =========================================
+   LEAVE HISTORY
+   ========================================= */
+
+.history-card {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.history-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.history-table th {
+    padding: 14px 16px;
+    text-align: left;
+    background: #f5f8fd;
+    color: #52617c;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.history-table td {
+    padding: 16px;
+    border-top: 1px solid #edf1f7;
+    color: #53627c;
+    white-space: nowrap;
+}
+
+.history-table tbody tr:hover {
+    background: #fafcff;
+}
+
+.history-table td strong {
+    color: #263653;
+}
+
+.reason-cell {
+    max-width: 220px;
+    white-space: normal !important;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    background: #edf3ff;
+    color: #3568c8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.history-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #edf1f7;
+}
+/* =========================================
+   HOD DASHBOARD
+   ========================================= */
+
+.approval-card {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.approval-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.approval-table {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.approval-table th {
+    padding: 14px 15px;
+    text-align: left;
+    background: #f5f8fd;
+    color: #52617c;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.approval-table td {
+    padding: 15px;
+    border-top: 1px solid #edf1f7;
+    color: #53627c;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.approval-table tbody tr:hover {
+    background: #fafcff;
+}
+
+.approval-table td strong {
+    color: #263653;
+}
+
+.approval-reason {
+    max-width: 220px;
+    white-space: normal !important;
+}
+
+.approval-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.approve-btn {
+    background: #edf3ff;
+    color: #3568c8;
+}
+
+.approve-btn:hover {
+    background: #dfeaff;
+}
+
+.reject-btn {
+    background: #fff1f1;
+    color: #c55353;
+}
+
+.reject-btn:hover {
+    background: #ffe4e4;
+}
